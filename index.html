@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="loxapp">
   <head>
     <meta charset="utf-8">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <title>Angular Course</title>
   </head>
   <body>
-    <h1>App Is up and going</h1>
-    <b>Demo SPA</b>
+    <div class="{padding:2px;}">
+      <div id="app-body" ng-controller="LoxCtrl">
+        <input type="text" ng-model="name" ng-keyup="displayCode()"/>
+        <div class="">
+          Total char code: {{toalCode}}
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>
